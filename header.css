@@ -39,13 +39,18 @@
   position: absolute;
   top: 100%;
   right: 0;
-  display: grid;
-  
+  display: none;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
   padding: 2rem;
   width: 640px;
   background-color: whitesmoke;
   box-shadow: 0 5px 6px rgba(0,0,0,0.16),
               0 5px 6px rgba(0,0,0,0.23);
+}
+
+.header .nav-section:hover .nav-section-dropdown {
+  display: grid;
 }
 
 .header .nav-section-dropdown a {
