@@ -1,0 +1,5 @@
+.header.nav-section.dropdown::before {
+  content: "";
+  top: 0;
+  right: 0;
+}
