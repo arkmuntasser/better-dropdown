@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 1rem;
   height: 60px;
   background-color: #fff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+              0 3px 6px rgba(0,0,0,0.23);
 }
 
 .header .logo {
@@ -16,6 +17,39 @@
 
 .header .logo img {
   display: block;
-  margin-right: 16px;
-  width: 30px;
+  margin-right: .8rem;
+  width: 1.9rem;
+}
+
+.header nav { height: 100%; }
+
+.header .nav-section {
+  position: relative;
+  height: 100%;
+}
+
+.header .nav-section-title {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 100%;
+}
+
+.header .nav-section-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: grid;
+  
+  padding: 2rem;
+  width: 640px;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.16),
+              0 5px 6px rgba(0,0,0,0.23);
+}
+
+.header .nav-section-dropdown a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
 }
