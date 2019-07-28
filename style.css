@@ -1,11 +1,36 @@
-/* CSS files add styling rules to your content */
+@import url('https://rsms.me/inter/inter.css');
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ec407a;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #e91e63;
+  text-decoration: underline;
 }
