@@ -1,5 +1,27 @@
-.header.nav-section.dropdown::before {
+.header .dropdown-helper {
   content: "";
+  position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
+  width: 100vw;
+  max-width: 640px;
+  height: 100%;
+  background-color: red;
+  opacity: 0.3;
+  transform-origin: bottom center;
+  transition: transform 300ms ease 200ms;
+}
+
+.header .nav-section:hover .dropdown-helper {
+  transform: scaleY(0);
+}
+
+.header .nav-section-title:hover + .dropdown-helper {
+  transform: scaleY(1);
+}
+
+.header .nav-section-title {
+  position: relative;
+  z-index: 2;
 }
